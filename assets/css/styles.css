@@ -483,3 +483,56 @@ a {
   font-style: italic;
   line-height: 1.54;
 }
+
+/* Features */
+.features {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+
+.features .body {
+  display: flex;
+  align-items: center;
+}
+
+.features .images {
+  display: flex;
+  gap: 0 30px;
+}
+
+.features .images img {
+  width: 270px;
+  height: 404px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.features .images img:first-child {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%;
+  margin-left: auto;
+}
+
+.features .content .heading {
+  font-size: 3.8rem;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
+
+.features .content .desc {
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.features .content .cta-btn {
+  margin-top: 32px;
+  min-width: 137px;
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: transparent;
+}
