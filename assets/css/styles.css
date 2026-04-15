@@ -19,6 +19,7 @@ body {
 /* Common */
 a {
   text-decoration: none;
+  color: #171100;
 }
 
 .main-content {
@@ -454,11 +455,12 @@ a {
   font-weight: 400;
   line-height: 1.86;
 }
+.blog .dots,
 .feedback .dots {
   display: flex;
   margin-top: 28px;
 }
-
+.blog .dots .dot,
 .feedback .dots .dot {
   margin-right: 6px;
   width: 6px;
@@ -467,6 +469,7 @@ a {
   background: #634700;
 }
 
+.blog .dots .dot.active,
 .feedback .dots .dot.active {
   background-color: var(--primary-color);
 }
@@ -535,4 +538,123 @@ a {
   color: #fff;
   background-color: var(--primary-color);
   border-color: transparent;
+}
+
+/* Features 2 */
+.features-2 {
+  margin-top: 70px;
+}
+.features-2 .body {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.features-2 .content {
+  margin-left: 0;
+  width: 49%;
+}
+
+.features-2 .images img {
+  width: 470px;
+  height: 440px;
+}
+
+/* Blog */
+.blog {
+  margin-top: 135px;
+  padding: 96px 0;
+  background-color: #fffcf4;
+}
+
+.blog .blog-top {
+  text-align: center;
+}
+
+.blog .blog-top .desc {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  width: 448px;
+  color: #696262;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.blog .blog-list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+
+.blog .item {
+  width: 33.33%;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.blog .item .thumb {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.blog .item .info {
+  padding: 20px 20px 28px;
+}
+
+.blog .info .date {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+
+.blog .info .date::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-right: 4px;
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.blog .info .date::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: -27px;
+  bottom: -12px;
+  display: inline-block;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+}
+
+.blog .title {
+  margin-top: 25px;
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.blog .btn {
+  margin-top: 12px;
+  font-size: 1.4rem;
+}
+
+.blog .btn:hover {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.blog .dots {
+  display: flex;
+  justify-content: center;
 }
